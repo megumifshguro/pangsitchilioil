@@ -113,17 +113,16 @@ font-family:"Bebas Neue";
 font-size:70px;
 }
 
-.hero-img img{
-width:650px;
-border-radius:40px;
-}
-
 .hero-text p{
 margin:20px 0;
 color:#ccc;
 }
 
 
+.hero-img img{
+width:700px;
+border-radius:60px;
+}
 
 
 /* FEATURES */
