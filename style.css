@@ -1,142 +1,362 @@
 html{
-  scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:Poppins, sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* biar sekalian ubah warna teks */
+}
+
+nav a:hover {
+  color: yellow;
 }
 
 body{
-  background:#0f0f0f;
-  color:white;
-  overflow-x:hidden;
+background:#0f0f0f;
+color:white;
 }
 
-img{
-  max-width:100%;
-  display:block;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
 }
 
-/* BUTTON */
+nav span{
+color:#ff2a2a;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
 .btn{
-  background:#ff2a2a;
-  padding:10px 20px;
-  color:white;
-  text-decoration:none;
-  border-radius:5px;
+background:#ff2a2a;
+border:none;
+padding:10px 20px;
+color:white;
+text-decoration: none;
+border-radius:5px;
+cursor:pointer;
 }
 
 .btn-outline{
-  border:1px solid white;
-  padding:10px 20px;
-  color:white;
-  border-radius:5px;
-  text-decoration:none;
+display: inline-block;
+background:transparent;
+border:1px solid white;
+text-decoration: none;
+padding:10px 20px;
+color:white;
+border-radius:5px;
+transform:translateY(-3px);
+background:rgba(255,255,255,0.1);
 }
 
 .btn-order{
-  background:#ff2a2a;
-  padding:12px 28px;
-  border-radius:8px;
-  text-decoration:none;
-  color:white;
-  font-weight:600;
+display:inline-block;
+background:#ff2a2a;
+color:white;
+padding:12px 28px;
+border-radius:8px;
+text-decoration:none;
+font-weight:600;
+transition:all 0.3s ease;
+box-shadow:0 5px 20px rgba(255,42,42,0.4);
 }
 
-/* HERO (INI YANG FIX UTAMA) */
+.btn-order:hover{
+transform:scale(1.1);
+box-shadow:0 10px 40px rgba(255,42,42,0.8);
+background:#ff0000;
+}
+.btn-order{
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(255,42,42,0.7);
+}
+
+70%{
+box-shadow:0 0 0 20px rgba(255,42,42,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(255,42,42,0);
+}
+
+}
+
+/* HERO */
+
 .hero{
-  display:flex;
-  flex-direction:column; /* ⬅️ teks dulu, gambar di bawah */
-  align-items:center;
-  text-align:center;
-  gap:25px;
-  padding:60px 20px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
 }
 
 .hero-text h1{
-  font-size:36px;
+font-family:"Bebas Neue";
+font-size:70px;
 }
 
 .hero-text p{
-  color:#ccc;
-  margin:10px 0 20px;
-}
-
-.hero-btn{
-  display:flex;
-  gap:15px;
-  justify-content:center;
-  flex-wrap:wrap;
-}
-
-.hero-img{
-  margin-top:20px;
+margin:20px 0;
+color:#ccc;
 }
 
 .hero-img img{
-  width:85%;
-  max-width:350px;
-  margin:auto;
-  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
+width:650px;
+border-radius:40px;
 }
 
+
 /* FEATURES */
+
 .features{
-  text-align:center;
-  padding:60px 20px;
+text-align:center;
+padding:80px;
 }
 
 .feature-container{
-  display:flex;
-  justify-content:center;
-  gap:20px;
-  flex-wrap:wrap;
-  margin-top:30px;
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:40px;
 }
 
 .feature{
-  background:#1a1a1a;
-  padding:20px;
-  border-radius:10px;
-  width:180px;
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+width:200px;
 }
 
-/* SIGNATURE */
+
 .signature{
-  padding:60px 20px;
-  text-align:center;
+padding:80px;
+text-align:center;
+}
+
+.signature h2{
+font-size:40px;
+margin-bottom:40px;
 }
 
 .signature-container{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  gap:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
 }
 
 .signature-img img{
-  max-width:300px;
-  border-radius:15px;
+width:400px;
+border-radius:20px;
 }
 
 .signature-text{
-  text-align:center;
-  max-width:350px;
+max-width:400px;
+text-align:left;
 }
+
+.signature-text h3{
+font-size:30px;
+margin-bottom:10px;
+}
+
+.signature-text p{
+color:#ccc;
+margin:15px 0;
+line-height:1.6;
+}
+
+.signature-text h4{
+margin-bottom:20px;
+color:#ff2a2a;
+}
+
+
+/* TESTIMONIAL */
+
+.testimonials{
+display:flex;
+justify-content:center;
+gap:40px;
+padding:80px;
+}
+
+.testi{
+background:#1a1a1a;
+padding:30px;
+border-radius:10px;
+width:300px;
+}
+
 
 /* CTA */
+
 .cta{
-  text-align:center;
-  padding:60px 20px;
-  background:#2a0000;
+text-align:center;
+padding:80px;
+background:#2a0000;
 }
 
+.btn-gofood{
+background:#00aa13;
+border:none;
+padding:12px 20px;
+margin-left:10px;
+color:white;
+border-radius:5px;
+}
+
+
 /* FOOTER */
+
 footer{
-  text-align:center;
-  padding:20px;
-  background:#000;
+text-align:center;
+padding:20px;
+background:#000;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px){
+  nav{
+    padding:20px 40px;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:60px 40px;
+    gap:30px;
+  }
+
+  .hero-text h1{
+    font-size:55px;
+  }
+
+  .hero-img img{
+    max-width:500px;
+  }
+
+  .feature-container{
+    flex-wrap:wrap;
+  }
+
+  .signature-container{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .signature-text{
+    text-align:center;
+  }
+
+  .testimonials{
+    flex-wrap:wrap;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+  nav{
+    flex-direction:column;
+    gap:15px;
+    padding:20px;
+    text-align:center;
+  }
+
+  nav ul{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 20px;
+    gap:30px;
+  }
+
+  .hero-text h1{
+    font-size:42px;
+    line-height:1.1;
+  }
+
+  .hero-text p{
+    font-size:14px;
+  }
+
+  .hero-btn{
+    justify-content:center;
+  }
+
+  .hero-img img{
+    width:100%;
+    max-width:100%;
+  }
+
+  .features{
+    padding:50px 20px;
+  }
+
+  .feature-container{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .feature{
+    width:100%;
+    max-width:300px;
+  }
+
+  .signature{
+    padding:50px 20px;
+  }
+
+  .signature-container{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .signature-img img{
+    width:100%;
+    max-width:300px;
+  }
+
+  .signature-text{
+    text-align:center;
+  }
+
+  .testimonials{
+    flex-direction:column;
+    align-items:center;
+    padding:50px 20px;
+  }
+
+  .testi{
+    width:100%;
+    max-width:300px;
+  }
+
+  .cta{
+    padding:50px 20px;
+  }
 }
