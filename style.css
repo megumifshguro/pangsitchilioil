@@ -60,12 +60,16 @@ img{
 
 .hero-text h1{
   font-size:60px;
+}.hero-img{
+  margin-top:30px;
 }
 
 .hero-img img{
-  max-width:500px;
+  width:90%;
+  max-width:350px;
+  margin:auto;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.8));
 }
-
 /* FEATURES */
 .features{
   text-align:center;
