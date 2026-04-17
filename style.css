@@ -17,7 +17,6 @@ body{
 
 img{
   max-width:100%;
-  height:auto;
   display:block;
 }
 
@@ -31,88 +30,107 @@ img{
 }
 
 .btn-outline{
-  display:inline-block;
   border:1px solid white;
   padding:10px 20px;
   color:white;
   border-radius:5px;
-  background:rgba(255,255,255,0.1);
+  text-decoration:none;
 }
 
 .btn-order{
-  display:inline-block;
   background:#ff2a2a;
   padding:12px 28px;
   border-radius:8px;
+  text-decoration:none;
+  color:white;
   font-weight:600;
-  box-shadow:0 5px 20px rgba(255,42,42,0.4);
 }
 
-/* HERO */
+/* HERO (INI YANG FIX UTAMA) */
 .hero{
   display:flex;
+  flex-direction:column; /* ⬅️ teks dulu, gambar di bawah */
   align-items:center;
-  justify-content:space-between;
-  gap:40px;
-  padding:80px;
+  text-align:center;
+  gap:25px;
+  padding:60px 20px;
 }
 
 .hero-text h1{
-  font-size:60px;
+  font-size:36px;
+}
+
+.hero-text p{
+  color:#ccc;
+  margin:10px 0 20px;
+}
+
+.hero-btn{
+  display:flex;
+  gap:15px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.hero-img{
+  margin-top:20px;
 }
 
 .hero-img img{
-  max-width:500px;
+  width:85%;
+  max-width:350px;
+  margin:auto;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.8));
 }
 
 /* FEATURES */
 .features{
   text-align:center;
-  padding:80px;
+  padding:60px 20px;
 }
 
 .feature-container{
   display:flex;
   justify-content:center;
-  gap:30px;
-  margin-top:40px;
+  gap:20px;
   flex-wrap:wrap;
+  margin-top:30px;
 }
 
 .feature{
   background:#1a1a1a;
-  padding:30px;
+  padding:20px;
   border-radius:10px;
-  width:200px;
+  width:180px;
 }
 
 /* SIGNATURE */
 .signature{
-  padding:80px;
+  padding:60px 20px;
   text-align:center;
 }
 
 .signature-container{
   display:flex;
+  flex-direction:column;
   align-items:center;
-  justify-content:center;
-  gap:60px;
+  gap:30px;
 }
 
 .signature-img img{
-  max-width:400px;
-  border-radius:20px;
+  max-width:300px;
+  border-radius:15px;
 }
 
 .signature-text{
-  max-width:400px;
-  text-align:left;
+  text-align:center;
+  max-width:350px;
 }
 
 /* CTA */
 .cta{
   text-align:center;
-  padding:80px;
+  padding:60px 20px;
   background:#2a0000;
 }
 
@@ -121,47 +139,4 @@ footer{
   text-align:center;
   padding:20px;
   background:#000;
-}
-
-/* ================= MOBILE ================= */
-@media (max-width:768px){
-
-  .hero{
-    flex-direction:column-reverse; /* gambar di atas */
-    text-align:center;
-    padding:50px 20px;
-  }
-
-  .hero-text h1{
-    font-size:34px;
-  }
-
-  .hero-img img{
-    width:80%;
-    margin:auto;
-  }
-
-  .feature{
-    width:100%;
-    max-width:300px;
-  }
-
-  .signature-container{
-    flex-direction:column; /* gambar atas, teks bawah */
-    text-align:center;
-  }
-
-  .signature-text{
-    text-align:center;
-  }
-
-  .signature-img img{
-    max-width:300px;
-  }
-
-  .features,
-  .signature,
-  .cta{
-    padding:50px 20px;
-  }
 }
