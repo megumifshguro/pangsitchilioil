@@ -118,10 +118,9 @@ margin:20px 0;
 color:#ccc;
 }
 
-
 .hero-img img{
-width:700px;
-border-radius:60px;
+width:650px;
+border-radius:40px;
 }
 
 
@@ -189,6 +188,8 @@ line-height:1.6;
 margin-bottom:20px;
 color:#ff2a2a;
 }
+
+
 
 /* CTA */
 
@@ -324,11 +325,6 @@ background:#000;
     flex-direction:column;
     align-items:center;
     padding:50px 20px;
-  }
-
-  .testi{
-    width:100%;
-    max-width:300px;
   }
 
   .cta{
