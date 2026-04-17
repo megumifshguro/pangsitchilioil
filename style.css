@@ -101,11 +101,11 @@ box-shadow:0 0 0 0 rgba(255,42,42,0);
 
 /* HERO */
 
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px;
+.hero-btn{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 .hero-text h1{
