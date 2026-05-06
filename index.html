@@ -127,5 +127,36 @@ Order Now
 <p>© Pangsit Chili Oil</p>
 </footer>
 
+<!-- FLOATING BUTTON -->
+<div class="floating-btn" onclick="openPopup()">
+  Cara Order
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h2>Cara Order</h2>
+    <ol>
+      <li>Klik tombol Order Now</li>
+      <li>Isi format (nama, kelas, jumlah)</li>
+      <li>Kirim ke WhatsApp</li>
+      <li>Tunggu konfirmasi</li>
+    </ol>
+
+    <button onclick="closePopup()">Kembali</button>
+  </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+function openPopup() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+</script>
+  
 </body>
 </html>
