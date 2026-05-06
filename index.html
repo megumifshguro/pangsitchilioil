@@ -10,11 +10,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <style>
-html{
-scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
-section{
-scroll-margin-top:80px;
+section {
+    scroll-margin-top: 80px;
 }
 </style>
 
@@ -22,106 +22,138 @@ scroll-margin-top:80px;
 
 <body>
 
+<nav>
+    <a href="#">Pangsit<span>Chili Oil</span></a>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#variasi">Menu Variasi</a></li>
+        <li><a href="#signature">Signature</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+    </ul>
+    <a href="https://wa.me/6287730007234?text=Halo%20saya%20mau%20order%20Pangsit%20Chili%20Oil" class="btn">Order Now</a>
+</nav>
 
-
-
-<!-- HERO -->
-<section class="hero">
-<div class="hero-text">
-
-<h1>Pangsit Chili Oil <br> Pedas Nagih!</h1>
-  <div class="hero-img">
-<img src="hero.jpg">
-</div>
-
-<p>Pangsit lembut dengan chili oil homemade yang gurih dan pedas (only 10k).</p>
-
-<div class="hero-btn">
-<a href="https://wa.me/6287730007234?text=Halo%20saya%20mau%20order%20Pangsit%20Chili%20Oil%0A%0ANama:%0AKelas:%0AJumlah%20Pesanan:" class="btn">
-Order Now
-</a>
-
-
-</div>
-
-</div>
+<section class="hero" id="hero">
+    <div class="hero-text">
+        <h1>Pangsit Chili Oil <br> Pedas Nagih!</h1>
+        <div class="hero-img">
+            <img src="hero.jpg" alt="Pangsit Chili Oil">
+        </div>
+        <p>Pangsit lembut dengan chili oil homemade yang gurih dan pedas (only 10k).</p>
+        <div class="hero-btn">
+            <a href="https://wa.me/6287730007234?text=Halo%20saya%20mau%20order%20Pangsit%20Chili%20Oil%0A%0ANama:%0AKelas:%0AJumlah%20Pesanan:" class="btn btn-order">
+                Order Now
+            </a>
+        </div>
+    </div>
 </section>
 
-<!-- FEATURES -->
 <section class="features">
-<h2>Kenapa Pangsit Kami?</h2>
+    <h2>Kenapa Pangsit Kami?</h2>
+    <div class="feature-container">
+        <div class="feature">
+            <h3>Homemade Chili Oil</h3>
+            <p>Pedasnya wangi & gurih.</p>
+        </div>
+        <div class="feature">
+            <h3>Fresh Dumplings</h3>
+            <p>Dibuat setiap hari.</p>
+        </div>
+        <div class="feature">
+            <h3>Fast Delivery</h3>
+            <p>Siap diantar cepat.</p>
+        </div>
+    </div>
+</section>
 
-<div class="feature-container">
-
-<div class="feature">
-<h3>Homemade Chili Oil</h3>
-<p>Pedasnya wangi & gurih.</p>
-</div>
-
-<div class="feature">
-<h3>Fresh Dumplings</h3>
-<p>Dibuat setiap hari.</p>
-</div>
-<div class="feature">
-<h3>Fast Delivery</h3>
-</div>
-</div>
+<section class="variasi" id="variasi">
+    <h2>Menu Variasi</h2>
+    <div class="variasi-container">
+        <div class="variasi-card">
+            <h3>Level Pedas</h3>
+            <ul>
+                <li>Level 1: Santai (Cocok untuk pemula)</li>
+                <li>Level 2: Pedas Nagih (Favorit pelanggan)</li>
+                <li>Level 3: Extra Pedas (Bikin keringatan)</li>
+            </ul>
+        </div>
+        <div class="variasi-card">
+            <h3>Varian Rasa</h3>
+            <ul>
+                <li>Original Chili Oil</li>
+                <li>Chili Oil Garlic (Extra Bawang)</li>
+                <li>Chili Oil Wijen</li>
+            </ul>
+        </div>
+    </div>
 </section>
 
 <section class="signature" id="signature">
-<h2>Our Signature</h2>
-
-<div class="signature-container">
-<div class="signature-img">
-<img src="pangsit1.jpg">
-</div>
-<div class="signature-text">
-<h3>Pangsit Chili Oil</h3>
-<p>
-Pangsit lembut dengan chili oil homemade yang gurih,
-pedas, dan bikin nagih.
-</p>
-<h4>Price : 10k (3 dumplings)</h4>
-<a href="https://wa.me/6287730007234?text=Halo%20saya%20mau%20order%20Pangsit%20Chili%20Oil" class="btn">
-Order Now
-</a>
-</div>
-</div>
+    <h2>Our Signature</h2>
+    <div class="signature-container">
+        <div class="signature-img">
+            <img src="pangsit1.jpg" alt="Signature Pangsit">
+        </div>
+        <div class="signature-text">
+            <h3>Pangsit Chili Oil</h3>
+            <p>
+                Pangsit lembut dengan chili oil homemade yang gurih,
+                pedas, dan bikin nagih.
+            </p>
+            <h4>Price : 10k (3 dumplings)</h4>
+            <a href="https://wa.me/6287730007234?text=Halo%20saya%20mau%20order%20Pangsit%20Chili%20Oil" class="btn">
+                Order Now
+            </a>
+        </div>
+    </div>
 </section>
+
+<section class="testimonials" id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <p>"Chili oil-nya gurih dan pedasnya pas banget di lidah, benar-benar bikin nagih!"</p>
+            <h4>- Siska, Mahasiswa</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"Pangsitnya lembut, isiannya padat, dan pelayanannya cepat. Sangat direkomendasikan."</p>
+            <h4>- Budi, Karyawan</h4>
+        </div>
+        <div class="testimonial-card">
+            <p>"Harga sangat terjangkau tapi rasanya seperti bintang lima. Bakal order lagi!"</p>
+            <h4>- Rina, Pelajar</h4>
+        </div>
+    </div>
 </section>
 
 <footer>
-<p>© Pangsit Chili Oil</p>
+    <p>© Pangsit Chili Oil</p>
 </footer>
 
-<!-- FLOATING BUTTON -->
 <div class="floating-btn" onclick="openPopup()">
-  Cara Order
+    Cara Order
 </div>
 
-<!-- POPUP -->
 <div id="popup" class="popup">
-  <div class="popup-content">
-    <h2>Cara Order</h2>
-    <ol>
-      <li>Klik tombol Order Now</li>
-      <li>Isi format (nama, kelas, jumlah)</li>
-      <li>Kirim ke WhatsApp</li>
-      <li>Tunggu konfirmasi</li>
-    </ol>
-
-    <button onclick="closePopup()">Kembali</button>
-  </div>
+    <div class="popup-content">
+        <h2>Cara Order</h2>
+        <ol>
+            <li>Klik tombol Order Now</li>
+            <li>Isi format pemesanan (Nama, Kelas, Jumlah Pesanan)</li>
+            <li>Kirim format tersebut ke WhatsApp</li>
+            <li>Tunggu balasan untuk konfirmasi pesanan</li>
+        </ol>
+        <button onclick="closePopup()">Kembali</button>
+    </div>
 </div>
 
-<!-- SCRIPT -->
 <script>
 function openPopup() {
-  document.getElementById("popup").style.display = "flex";
+    document.getElementById("popup").style.display = "flex";
 }
 
 function closePopup() {
-  document.getElementById("popup").style.display = "none";
+    document.getElementById("popup").style.display = "none";
 }
 </script>
   
