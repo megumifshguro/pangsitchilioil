@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pangsit Chili Oil</title>
 
-<button class="btn btn-order" onclick="openOrderPopup"()">
-    Oerder Now
-</button>    
+<button class="btn btn-order" onclick="openOrderPopup()">
+    Order Now
+</button>
 
 <style>
 html {
@@ -30,9 +30,9 @@ section {
         <li><a href="#signature">Signature</a></li>
         <li><a href="#testimoni">Testimoni</a></li>
     </ul>
-    <button class="btn btn-order" onclick="openOrderPopup()>"
-        Order Now
-     </button> 
+  <button class="btn btn-order" onclick="openOrderPopup()">
+    Order Now
+</button>
 </nav>
 
 <section class="hero" id="hero">
@@ -144,33 +144,42 @@ section {
 </div>
 
 <div id="orderPopup" class="popup">
+
     <div class="popup-content order-form">
-    <span class="close-btn" onclick="closeOrderPopup()">X</div>span>
-    <h2>Form Pembelian</h2>
-     <input type="text" id="nama" placeholder="Nama">
-     <input type="text" id="kelas" placeholder="Kelas">
-     <input type="text" id="Jumlah" placeholder="Jumlah Pesanan">
 
-         <select id="level">
-             <option value "">Pilih Varian</option>
-             <option>Level 1</option>
-             <option>Level 2</option>
-             </select>
+        <span class="close-btn" onclick="closeOrderPopup()">✕</span>
 
-          <select id="rasa">
-             <option value "">Pilih Varian</option>
-             <option>Original Chili Oil</option>
-             <option>Chili Oil Garlic</option>
-             </select>
-         
-         <button onclick="kirimWA()" class="btn"> 
-             Kirim Pesanan
-         </button>
- </div>
-</div>    
+        <h2>Form Pembelian</h2>
+
+        <input type="text" id="nama" placeholder="Nama">
+
+        <input type="text" id="kelas" placeholder="Kelas">
+
+        <input type="number" id="jumlah" placeholder="Jumlah Pesanan">
+
+        <select id="level">
+            <option value="">Pilih Level Pedas</option>
+            <option>Level 1</option>
+            <option>Level 2</option>
+        </select>
+
+        <select id="rasa">
+            <option value="">Pilih Varian</option>
+            <option>Original Chili Oil</option>
+            <option>Chili Oil Garlic</option>
+        </select>
+
+        <button onclick="kirimWA()" class="btn">
+            Kirim Pesanan
+        </button>
+
+    </div>
+
+</div>
          
     
 <script>
+
 function openPopup() {
     document.getElementById("popup").style.display = "flex";
 }
@@ -178,7 +187,16 @@ function openPopup() {
 function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
-    function kirimWA(){
+
+function openOrderPopup(){
+    document.getElementById("orderPopup").style.display = "flex";
+}
+
+function closeOrderPopup(){
+    document.getElementById("orderPopup").style.display = "none";
+}
+
+function kirimWA(){
 
     let nama = document.getElementById("nama").value;
     let kelas = document.getElementById("kelas").value;
@@ -187,22 +205,25 @@ function closePopup() {
     let rasa = document.getElementById("rasa").value;
 
     let pesan =
-`Halo saya mau order Pangsit Chili Oil
+`Halo saya mau order Pangsit Chili Oil 🌶️
 
-Nama : ${nama}
-Kelas : ${kelas}
-Jumlah Pesanan : ${jumlah}
-Level Pedas : ${level}
-Varian Rasa : ${rasa}`;
+━━━━━━━━━━━━━━
 
-    let nomor = "085714531521";
+👤 Nama : ${nama}
+🏫 Kelas : ${kelas}
+
+🥟 Jumlah Pesanan : ${jumlah}
+🌶️ Level Pedas : ${level}
+✨ Varian Rasa : ${rasa}`;
+
+    let nomor = "6285714531521";
 
     let url =
 `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
 
     window.open(url, '_blank');
 }
-</script>
 
+</script>
 </body>
 </html>
