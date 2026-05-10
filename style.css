@@ -483,3 +483,14 @@ footer{
 #qrisBox{
     display: none;
 }
+#qrisBox{
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.qr-img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
