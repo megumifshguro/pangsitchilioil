@@ -214,33 +214,6 @@ function closePopup() {
     document.getElementById("popup").style.display = "none";
 }
 
-function openOrderPopup(){
-    document.getElementById("orderPopup").style.display = "flex";
-}
-
-function closeOrderPopup(){
-    document.getElementById("orderPopup").style.display = "none";
-}
-
-function kirimWA(){
-
-    let nama = document.getElementById("nama").value;
-    let kelas = document.getElementById("kelas").value;
-    let jumlah = document.getElementById("jumlah").value;
-    let level = document.getElementById("level").value;
-    let rasa = document.getElementById("rasa").value;
-    let payment =document.getElementById("payment").value;
-
-   <script>
-
-function openPopup() {
-    document.getElementById("popup").style.display = "flex";
-}
-
-function closePopup() {
-    document.getElementById("popup").style.display = "none";
-}
-
 function openOrderPopup() {
     document.getElementById("orderPopup").style.display = "flex";
 }
@@ -249,49 +222,42 @@ function closeOrderPopup() {
     document.getElementById("orderPopup").style.display = "none";
 }
 
-function showQR(){
+function showQR() {
 
-    let payment =
-    document.getElementById("payment").value;
+    let payment = document.getElementById("payment").value;
 
-    <div id="qrisBox" style="display:none;">
+    let qrisBox = document.getElementById("qrisBox");
 
-    if(payment === "DANA"){
+    if (payment === "DANA") {
         qrisBox.style.display = "block";
-    }else{
+    } else {
         qrisBox.style.display = "none";
     }
-
 }
 
-function kirimWA(){
+function kirimWA() {
 
-    let nama =
-    document.getElementById("nama").value;
+    let nama = document.getElementById("nama").value;
 
-    let kelas =
-    document.getElementById("kelas").value;
+    let kelas = document.getElementById("kelas").value;
 
-    let jumlah =
-    document.getElementById("jumlah").value;
+    let jumlah = document.getElementById("jumlah").value;
 
-    let level =
-    document.getElementById("level").value;
+    let level = document.getElementById("level").value;
 
-    let rasa =
-    document.getElementById("rasa").value;
+    let rasa = document.getElementById("rasa").value;
 
-    let payment =
-    document.getElementById("payment").value;
+    let payment = document.getElementById("payment").value;
 
     let pesan =
-`Halo saya mau order Pangsit Chili Oil 
- Nama : ${nama}
- Kelas : ${kelas}
- Jumlah Pesanan : ${jumlah}
- Level Pedas : ${level}
- Varian Rasa : ${rasa}
- Pembayaran : ${payment}`;
+`Halo saya mau order Pangsit Chili Oil
+
+Nama : ${nama}
+Kelas : ${kelas}
+Jumlah Pesanan : ${jumlah}
+Level Pedas : ${level}
+Varian Rasa : ${rasa}
+Pembayaran : ${payment}`;
 
     let nomor = "6285714531521";
 
@@ -299,7 +265,6 @@ function kirimWA(){
 `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
 
     window.open(url, '_blank');
-
 }
 
 </script>
