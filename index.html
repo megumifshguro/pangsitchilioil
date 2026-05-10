@@ -132,7 +132,7 @@
         <h2>Cara Order</h2>
         <ol>
             <li>Klik tombol Order Now</li>
-            <li>Isi format pemesanan (Nama, Kelas, Jumlah Pesanan)</li>
+            <li>Isi format pemesanan</li>
             <li>Kirim format tersebut ke WhatsApp</li>
             <li>Tunggu balasan untuk konfirmasi pesanan</li>
         </ol>
@@ -166,12 +166,26 @@
             <option>Chili Oil Garlic</option>
         </select>
 
-        <select id="payment"
-        <option value="">Pilih Metode Pembayaran</option>
-            <option>Cash</option>
-            <option>Dana</option>
-            
-        <button onclick="kirimWA()" class="btn">
+        <!-- PAYMENT -->
+        <select id="payment" onchange="showQR()">
+            <option value="">Pilih Metode Pembayaran</option>
+            <option value="Cash">Cash</option>
+            <option value="DANA">DANA</option>
+        </select>
+
+        <!-- QR DANA -->
+        <div id="qrisBox" style="display:none; text-align:center;">
+
+            <img src="qrdana.png" alt="QR DANA" class="qr-img">
+
+            <p class="qr-text">
+                Scan QR DANA untuk pembayaran
+            </p>
+
+        </div>
+
+        <!-- BUTTON WA -->
+        <button onclick="kirimWA()" class="btn btn-order">
             Kirim Pesanan
         </button>
 
