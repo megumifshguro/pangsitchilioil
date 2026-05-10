@@ -580,20 +580,5 @@ footer{
     position:relative;
 }
 
-.order-form input,
-.order-form select{
-    padding:12px;
-    border-radius:10px;
-    border:1px solid #ccc;
-    outline:none;
-}
-
-.close-btn{
-    position:absolute;
-    right:15px;
-    top:10px;
-    cursor:pointer;
-    font-size:20px;
-}
 }
 }
