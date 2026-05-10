@@ -567,5 +567,33 @@ footer{
         width: 100%;
         max-width: 300px;
     }
+    .order-form{
+    width:350px;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    position:relative;
+}
+
+.order-form input,
+.order-form select{
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+.close-btn{
+    position:absolute;
+    right:15px;
+    top:10px;
+    cursor:pointer;
+    font-size:20px;
+}
 }
 }
