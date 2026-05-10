@@ -156,17 +156,21 @@
 
         <select id="level">
             <option value="">Pilih Level Pedas</option>
-            <option>Level 1</option>
-            <option>Level 2</option>
+            <option value="Level 1">Level 1</option>
+            <option value="Level 2">Level 2</option>
         </select>
 
         <select id="rasa">
             <option value="">Pilih Varian</option>
-            <option>Original Chili Oil</option>
-            <option>Chili Oil Garlic</option>
+            <option value="Original Chili Oil">
+                Original Chili Oil
+            </option>
+
+            <option value="Chili Oil Garlic">
+                Chili Oil Garlic
+            </option>
         </select>
 
-        <!-- PAYMENT -->
         <select id="payment" onchange="showQR()">
             <option value="">Pilih Metode Pembayaran</option>
             <option value="Cash">Cash</option>
@@ -174,9 +178,11 @@
         </select>
 
         <!-- QR DANA -->
-        <div id="qrisBox" style="display:none; text-align:center;">
+        <div id="qrisBox">
 
-            <img src="qrdana.png" alt="QR DANA" class="qr-img">
+            <img src="qrdana.png"
+            alt="QR DANA"
+            class="qr-img">
 
             <p class="qr-text">
                 Scan QR DANA untuk pembayaran
@@ -184,9 +190,13 @@
 
         </div>
 
-        <!-- BUTTON WA -->
-        <button onclick="kirimWA()" class="btn btn-order">
+        <!-- BUTTON -->
+        <button type="button"
+        onclick="kirimWA()"
+        class="btn btn-order">
+
             Kirim Pesanan
+
         </button>
 
     </div>
