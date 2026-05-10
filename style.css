@@ -351,51 +351,8 @@ footer{
 }
 
 /* ================= RESPONSIVE ================= */
-@media (max-width: 992px){
-    nav{
-        padding:20px 40px;
-    }
-
-    .hero{
-        flex-direction:column;
-        text-align:center;
-        padding:60px 40px;
-        gap:30px;
-    }
-
-    .hero-text h1{
-        font-size:55px;
-    }
-
-    .hero-img img{
-        max-width:500px;
-    }
-
-    .feature-container{
-        flex-wrap:wrap;
-    }
-
-    .signature-container{
-        flex-direction:column;
-        gap:30px;
-    }
-
-    .signature-text{
-        text-align:center;
-    }
-
-    .variasi-container{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonial-container {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 @media (max-width: 768px){
+
     nav{
         flex-direction:column;
         gap:15px;
@@ -408,22 +365,22 @@ footer{
         gap:10px;
     }
 
-    .hero {
-        padding: 50px 20px;
-        gap: 30px;
+    .hero{
+        padding:50px 20px;
+        gap:30px;
     }
 
-    .hero-text h1 {
-        font-size: 42px;
-        line-height: 1.1;
+    .hero-text h1{
+        font-size:42px;
+        line-height:1.1;
     }
 
-    .hero-text p {
-        font-size: 14px;
+    .hero-text p{
+        font-size:14px;
     }
 
-    .hero-img img {
-        max-width: 90%;
+    .hero-img img{
+        max-width:90%;
     }
 
     .features{
@@ -440,13 +397,13 @@ footer{
         max-width:300px;
     }
 
-    .variasi {
-        padding: 50px 20px;
+    .variasi{
+        padding:50px 20px;
     }
 
-    .variasi-card {
-        width: 100%;
-        max-width: 300px;
+    .variasi-card{
+        width:100%;
+        max-width:300px;
     }
 
     .signature{
@@ -468,14 +425,19 @@ footer{
     }
 
     .testimonials{
-        padding: 50px 20px;
+        padding:50px 20px;
     }
 
-    .testimonial-card {
-        width: 100%;
-        max-width: 300px;
+    .testimonial-card{
+        width:100%;
+        max-width:300px;
     }
-/* ORDER FORM */
+
+} /* <- PENUTUP MEDIA QUERY */
+
+
+/* ================= ORDER FORM ================= */
+
 .order-form{
     width:90%;
     max-width:350px;
@@ -499,10 +461,15 @@ footer{
 
     background:#2a2a2a;
     color:white;
+    font-size:14px;
 }
 
 .order-form input::placeholder{
     color:#aaa;
+}
+
+.order-form button{
+    margin-top:10px;
 }
 
 .close-btn{
